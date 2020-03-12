@@ -168,8 +168,8 @@
                 <source>menu.tags</source>
                 <target>Tagi</target>
             </trans-unit>
-            <trans-unit id="menu.doctor">
-                <source>menu.doctor</source>
+            <trans-unit id="menu.planner">
+                <source>menu.planner</source>
                 <target>Diagnostyka</target>
             </trans-unit>
             

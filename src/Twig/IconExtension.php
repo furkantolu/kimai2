@@ -34,7 +34,7 @@ final class IconExtension extends AbstractExtension
         'dashboard' => 'fas fa-tachometer-alt',
         'debug' => 'far fa-file-alt',
         'delete' => 'far fa-trash-alt',
-        'doctor' => 'fas fa-medkit',
+        'planner' => 'fas fa-medkit',
         'download' => 'fas fa-download',
         'duration' => 'far fa-hourglass',
         'edit' => 'far fa-edit',

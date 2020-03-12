@@ -1,0 +1,10 @@
+{% extends 'base.html.twig' %}
+{% import "planner/actions.html.twig" as actions %}
+
+{% block page_title %}{{ 'menu.planner'|trans }}{% endblock %}
+{% block page_actions %}{{ actions.planner('index') }}{% endblock %}
+
+{% block main %}
+    <a href="https://docs.google.com/spreadsheets/u/4/d/1t9bnouWdUn6UwJVoafkc6PHxtv1G6TAR0cQIHR-n-g8/edit?usp=sharing" target="_blank">Link</a>
+    <iframe width=100% height=590 src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTVOV_L_LKK3n8C_ArWqQDM1I1IT1Hsdw248lgcGV5P4t6f18jJOdRajygyXKorAnfC6gCegNNofRrm/pubhtml?widget=true&amp;headers=false"></iframe>
+{% endblock %}

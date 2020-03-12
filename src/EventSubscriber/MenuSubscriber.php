@@ -148,7 +148,7 @@ final class MenuSubscriber implements EventSubscriberInterface
 
         if ($auth->isGranted('system_information')) {
             $menu->addChild(
-                new MenuItemModel('doctor', 'menu.doctor', 'doctor', [], $this->getIcon('doctor'))
+                new MenuItemModel('planner', 'menu.planner', 'planner', [], $this->getIcon('planner'))
             );
         }
     }
