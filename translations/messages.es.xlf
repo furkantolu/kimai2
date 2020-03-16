@@ -160,9 +160,9 @@
                 <source>menu.tags</source>
                 <target>Etiquetas</target>
             </trans-unit>
-            <trans-unit id="menu.planner">
-                <source>menu.planner</source>
-                <target>Planner</target>
+            <trans-unit id="menu.doctor">
+                <source>menu.doctor</source>
+                <target>Doctor</target>
             </trans-unit>
 
             <!--

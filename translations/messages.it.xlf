@@ -180,8 +180,8 @@
                 <source>menu.tags</source>
                 <target>Tags</target>
             </trans-unit>
-            <trans-unit id="menu.planner">
-                <source>menu.planner</source>
+            <trans-unit id="menu.doctor">
+                <source>menu.doctor</source>
                 <target>Diagnostica</target>
             </trans-unit>
 

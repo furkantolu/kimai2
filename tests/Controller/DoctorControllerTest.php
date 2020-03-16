@@ -14,18 +14,18 @@ use App\Entity\User;
 /**
  * @group integration
  */
-class PlannerControllerTest extends ControllerBaseTest
+class DoctorControllerTest extends ControllerBaseTest
 {
-    public function testPlannerIsSecure()
+    public function testDoctorIsSecure()
     {
-        $this->assertUrlIsSecured('/planner');
-        $this->assertUrlIsSecuredForRole(User::ROLE_ADMIN, '/planner');
+        $this->assertUrlIsSecured('/doctor');
+        $this->assertUrlIsSecuredForRole(User::ROLE_ADMIN, '/doctor');
     }
 
     public function testIndexAction()
     {
         $client = $this->getClientForAuthenticatedUser(User::ROLE_SUPER_ADMIN);
-        $this->assertAccessIsGranted($client, '/planner');
+        $this->assertAccessIsGranted($client, '/doctor');
 
         $result = $client->getCrawler()->filter('.content .box-header');
         $this->assertEquals(7, count($result));

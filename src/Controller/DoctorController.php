@@ -15,10 +15,10 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
- * @Route(path="/planner")
+ * @Route(path="/doctor")
  * @Security("is_granted('system_information')")
  */
-class PlannerController extends AbstractController
+class DoctorController extends AbstractController
 {
     /**
      * PHP extensions which Kimai needs for runtime.
@@ -56,7 +56,7 @@ class PlannerController extends AbstractController
     }
 
     /**
-     * @Route(path="/flush-log", name="planner_flush_log", methods={"GET"})
+     * @Route(path="/flush-log", name="doctor_flush_log", methods={"GET"})
      * @Security("is_granted('system_configuration')")
      */
     public function deleteLogfileAction(): Response
@@ -75,11 +75,11 @@ class PlannerController extends AbstractController
             }
         }
 
-        return $this->redirectToRoute('planner');
+        return $this->redirectToRoute('doctor');
     }
 
     /**
-     * @Route(path="", name="planner", methods={"GET"})
+     * @Route(path="", name="doctor", methods={"GET"})
      */
     public function index(): Response
     {
@@ -87,7 +87,7 @@ class PlannerController extends AbstractController
 
         $canDeleteLogfile = $this->isGranted('system_configuration') && is_writable($this->getLogFilename());
 
-        return $this->render('planner/index.html.twig', array_merge(
+        return $this->render('doctor/index.html.twig', array_merge(
             [
                 'modules' => get_loaded_extensions(),
                 'dotenv' => $this->getEnvVars(),

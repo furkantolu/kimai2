@@ -173,8 +173,8 @@
                 <source>menu.tags</source>
                 <target>Značky</target>
             </trans-unit>
-            <trans-unit id="menu.planner">
-                <source>menu.planner</source>
+            <trans-unit id="menu.doctor">
+                <source>menu.doctor</source>
                 <target>Sys-Doktor</target>
             </trans-unit>
 
