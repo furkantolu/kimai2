@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+{% import "macros/widgets.html.twig" as widgets %}
+{% import "planner/actions.html.twig" as actions %}
+
+{% block main %}
+  <ul class="nav text-right">
+      <li class="nav-item text-right"><a  class="nav-link active text-right bd-highlight" href="https://docs.google.com/spreadsheets/d/1t9bnouWdUn6UwJVoafkc6PHxtv1G6TAR0cQIHR-n-g8/edit?usp=sharing" target="_blank">Haftalık planınızı düzenlemek için tıklayınız.</a></li>
+  </ul>  
+ <iframe width=100% height=590 src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTVOV_L_LKK3n8C_ArWqQDM1I1IT1Hsdw248lgcGV5P4t6f18jJOdRajygyXKorAnfC6gCegNNofRrm/pubhtml?widget=true&amp;headers=false"></iframe>
+
+{% endblock %}

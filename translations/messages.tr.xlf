@@ -96,6 +96,11 @@
             <!--
               Menu / Navbar items
             -->
+            <trans-unit id="menu.planner">
+                <source>menu.planner</source>
+                <target>Planlayıcı</target>
+            </trans-unit>
+
             <trans-unit id="menu.homepage">
                 <source>menu.homepage</source>
                 <target state="translated">Kontrol paneli</target>

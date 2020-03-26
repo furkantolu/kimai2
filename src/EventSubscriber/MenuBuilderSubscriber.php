@@ -61,6 +61,10 @@ class MenuBuilderSubscriber implements EventSubscriberInterface
             new MenuItemModel('dashboard', 'menu.homepage', 'dashboard', [], 'fas fa-tachometer-alt')
         );
 
+        $event->addItem(
+            new MenuItemModel('planner', 'menu.planner', 'planner', [], 'fas fa-hourglass')
+        );
+
         $menuEvent = new ConfigureMainMenuEvent(
             $request,
             $event,

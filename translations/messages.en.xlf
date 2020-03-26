@@ -116,6 +116,11 @@
             <!--
               Menu / Navbar items
             -->
+            <trans-unit id="menu.planner">
+                <source>menu.planner</source>
+                <target>Planner</target>
+            </trans-unit>
+
             <trans-unit id="menu.homepage">
                 <source>menu.homepage</source>
                 <target>Dashboard</target>
